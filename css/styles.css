@@ -69,16 +69,16 @@ li {
   line-height: 25px;
 }
 .om_mig h2 {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .om_mig img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  margin-left: 120px;
 }
-.om_mig img,
 .om_mig div {
-  padding: 30px;
+  padding: 70px;
 }
 
 .projectLista {

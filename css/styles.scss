@@ -80,17 +80,17 @@ li {
   background-color: variables.$backgroundColorWhite;
   @include flexCenter();
   line-height: 25px;
-  h2 {
-    margin-bottom: 40px;
+  h2{
+    margin-bottom: 20px;
   }
   img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    margin-left:120px;
   }
-  img,
   div {
-    padding: 30px;
+    padding:70px;
   }
 }
 

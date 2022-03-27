@@ -66,6 +66,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 25px;
 }
 .om_mig h2 {
   margin-bottom: 40px;
@@ -90,7 +91,6 @@ li {
   align-items: center;
 }
 .projectLista .gallery {
-  width: inherit;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -98,7 +98,7 @@ li {
   width: 300px;
   height: 200px;
   border: 1px solid black;
-  margin: 40px;
+  margin: 20px;
   filter: grayscale(30%);
   transition: 0.5s;
 }
@@ -194,12 +194,13 @@ p {
   }
   section .countdown {
     position: relative;
-    bottom: 45px;
+    bottom: 125px;
   }
 
   .projectLista .gallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .ambition_intresse {
@@ -222,7 +223,6 @@ p {
     /*move the vertical nav to right side of the screen*/
     transform: translateX(100%);
     /*movement of the nav */
-    transition: transform 0.5s ease-in;
     position: fixed;
     top: -20px;
   }

@@ -20,6 +20,7 @@ body {
   font: 100% variables.$font-stack;
   background-color: black;
   margin: 0 80px 0;
+  
   //text-align: center;
 }
 
@@ -78,6 +79,7 @@ li {
   @include columnWidthHeight();
   background-color: variables.$backgroundColorWhite;
   @include flexCenter();
+  line-height: 25px;
   h2 {
     margin-bottom: 40px;
   }
@@ -99,15 +101,14 @@ li {
   }
   background-color: variables.$backgroundColorWhite;
   .gallery {
-    //@include flexCenter();
-    width: inherit;
+    //width: inherit;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     img {
       width: 300px;
       height: 200px;
       border: 1px solid black;
-      margin: 40px;
+      margin: 20px;
       filter: grayscale(30%);
       transition: 0.5s;
       &:hover {
@@ -190,25 +191,22 @@ p {
     display: flex;
     flex-direction: column;
     .title {
-      // position: relative;
-      // top: 80px;
-      // right: 150px;
       @include flexCenter();
     }
     .countdown {
       position: relative;
-      bottom: 45px;
+      bottom: 125px;
     }
   }
   .projectLista {
     .gallery {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
     }
   }
   .ambition_intresse {
     display: flex;
-    //flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
   }
@@ -228,7 +226,7 @@ p {
     /*move the vertical nav to right side of the screen*/
     transform: translateX(100%);
     /*movement of the nav */
-    transition: transform 0.5s ease-in;
+    //transition: transform 0.5s ease-in;
     position: fixed;
     top: -20px;
   }

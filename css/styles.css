@@ -213,7 +213,7 @@ p {
     z-index: 1;
     position: absolute;
     right: 0;
-    height: 15vh;
+    height: 10vh;
     background-color: black;
     display: flex;
     flex-direction: row;
@@ -239,6 +239,41 @@ p {
     /*hide the link of nav*/
     opacity: 0;
   }
+}
+
+
+@media screen and (max-width:400px){
+  body{
+    font-size: 10px;
+  }
+  .nav-links li{
+    margin:0;
+    padding:0;
+  }
+  .om_mig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    line-height:15px;
+    
+   
+  }
+  .om_mig img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top:50px;
+  }
+  .om_mig div{
+    padding-top:0px;
+  }
+  section .countdown > div{
+    position: relative;
+    bottom: -50px; 
+    width:0px;
+
+  
 }
 .nav-active {
   /*when nav active, transform the nav to 0*/
@@ -266,5 +301,6 @@ p {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+
 
 /*# sourceMappingURL=styles.css.map */
